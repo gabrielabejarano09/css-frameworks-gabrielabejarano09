@@ -4,30 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body> 
-    Your Result
-    76
-    of 100
-  
-    Great
-    You scored higher than 65% of the people who have taken these tests.
-  
-    Summary
-  
-    Reaction
-    80 / 100
-  
-    Memory
-    92 / 100
-  
-    Verbal
-    61 / 100
-  
-    Visual
-    72 / 100
-  
-    Continue
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      class="flex items-center justify-center min-h-screen bg-gray-100 hidden md:flex"
+    >
+      <div class="max-w-2xl bg-white shadow-lg rounded-lg overflow-hidden flex">
+        <div class="w-1/2 relative">
+          <img
+            class="w-full h-full object-cover"
+            src="/assets/images/image-product-desktop.jpg"
+            alt="Gabrielle Essence Eau De Parfum"
+          />
+        </div>
+        <div class="w-1/2 p-6 flex flex-col">
+          <div>
+            <p class="mt-2 top-title mb-3">Perfume</p>
+            <h2 class="text-gray title mb-5">
+              Gabrielle Essence Eau De Parfum
+            </h2>
+            <p class="text-gray-600 mt-2 description">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+          </div>
+          <div>
+            <div class="flex items-center mt-4">
+              <span class="font-semibold mr-2 price">$149.99</span>
+              <span class="text-sm text-gray-500 line-through">$169.99</span>
+            </div>
+            <button
+              class="mt-7 w-full text-white font-bold py-2 px-4 rounded hover:bg-green-500 transition duration-300 button"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex items-center justify-center min-h-screen bg-gray-100 p-2 md:hidden"
+    >
+      <div
+        class="w-full max-w-xs bg-white shadow-lg rounded-lg overflow-hidden flex flex-col"
+      >
+        <!-- Imagen -->
+        <div class="w-full relative">
+          <img
+            class="w-full h-48 object-cover"
+            src="/assets/images/image-product-mobile.jpg"
+            alt="Gabrielle Essence Eau De Parfum"
+          />
+        </div>
+        <!-- Contenido -->
+        <div class="p-4 flex flex-col justify-between">
+          <div>
+            <p class="mt-2 top-title ">Perfume</p>
+            <h2 class="text-3xl text-gray-800 title">
+              Gabrielle Essence Eau De Parfum
+            </h2>
+            <p class="text-gray-600 mt-2 text-sm description">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+          </div>
+          <div class="mt-4">
+            <div class="flex items-center ">
+              <span class=" font-semibold price mr-2">$149.99</span>
+              <span class="text-sm text-gray-500 line-through">$169.99</span>
+            </div>
+            <button
+              class="mt-4 w-full text-white font-bold py-2 px-4 rounded hover:bg-green-500 transition duration-300 button"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
